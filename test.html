@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="show"></div>
+<a href="#" id="a">点击</a>
+<script src="js/Alert.js"></script>
+<script>
+    var obj = document.getElementById('show');
+    var dj = document.getElementById('a');
+    var a = new Alert(obj);
+    dj.onclick = function () {
+        a.init({ title: '这里是标题',
+            context: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+            style: {
+                width: '200'
+            },
+            actions: {
+                drag: true,//是否可以拖拽
+                moveIn: false,//是否有动画
+                html: false//是否html模式
+            }})
+    }
+</script>
+</body>
+</html>
